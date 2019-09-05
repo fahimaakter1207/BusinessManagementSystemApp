@@ -1,0 +1,116 @@
+﻿@model BusinessManagementSystemApp.Models.SupplierVM
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+
+
+    <div class="container">
+        <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+            <h3 class="section" style="text-align:center">Delete Supplier</h3>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Code">
+                    Code <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="code" class="form-control col-md-7" value="@Model.Code" name="Code" placeholder="1001" type="text">
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Name">
+                    Name <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="name" class="form-control col-md-7 col-xs-12" value="@Model.Name" name="Name" placeholder="Name" type="text">
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Address">
+                    Address <span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="address" name="Address" value="@Model.Address" class="form-control col-md-7 col-xs-12" placeholder="Address" />
+
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Email">
+                    Email <span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="email" id="email" name="Email" value="@Model.Email" class="form-control col-md-7 col-xs-12" placeholder="E-mail ">
+
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Contact">
+                    Contact<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="number" id="contact" name="Contact" value="@Model.Contact" class="form-control col-md-7 col-xs-12" placeholder="Contact No">
+
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="ContactPerson">
+                    Contact Person<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="number" id="contactPerson" name="ContactPerson" value="@Model.ContactPerson" class="form-control col-md-7 col-xs-12" placeholder="Contact Person">
+
+                </div>
+            </div>
+            <div class="item form-group">
+                <div class="col-md-10" style="text-align:center">
+                    <button id="Save" type="submit" class="btn btn-success">Delete</button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="~/Scripts/validator.js"></script>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+    @section scripts{
+        <script src="~/Scripts/SweetAlert.js"></script>
+        <script src="~/Scripts/sweetalert.min.js"></script>
+        <link href="~/Styles/sweetalert.css" rel="stylesheet" />
+        <script>
+            $(document).ready(function () {
+                swal({
+                    closeOnClickOutside: false,
+                    title: "Are you sure?",
+                    text: "You will not be able to recover this record!!",
+                    type: "warning",
+                    confirmButtonColor: "#cc0000",
+                    showCancelButton: true,
+                    confirmButtonText: "Yes, delete it!",
+                    closeOnConfirm: false
+                },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("ok.Do it!");
+                        } else {
+                            window.location.href = "/Supplier/Show"
+
+                        }
+                    });
+
+            });
+        </script>
+    }
+
+</body>
+</html>
+
+

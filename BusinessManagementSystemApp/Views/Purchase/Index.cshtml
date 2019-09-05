@@ -1,0 +1,56 @@
+﻿@model BusinessManagementSystemApp.Models.PurchaseViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<form method="post">
+    <div class="container">
+        <h3 class="text" style="text-align:center">
+            <b style="background-color:darkgreen; color:white">Purchase Product List</b>
+        </h3>
+    </div>
+    <div class="container" style="margin-top:3%">
+        <div class="form-group row">
+            <div class="col-md-9">
+                <a href="/Purchase/InsertPurchaseProduct" class="btn btn-info"><i class="glyphicon glyphicon-new-window"> <b>Purchase</b></i></a>
+            </div>
+            <div class="col-md-3">
+                <input type="text" placeholder="Search.." name="SearchText">
+                <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-hover table-striped table-responsive">
+                    <thead style="background-color:teal; color:white; text-align:center; font-weight:bold">
+                        <tr>
+                            <td>SL</td>
+                            <td>Product</td>
+                            <td>Available Quantity</td>
+                            <td>Unit Price</td>
+                            <td>New MRP</td>
+                        </tr>
+                    </thead>
+                    @if (Model != null && Model.PurchaseViewModels.Count > 0)
+                    {
+                        <tbody style="text-align:center; font-weight:bold">
+                            @{
+                                int sl = 1;
+                            }
+                            @foreach (var item in Model.PurchaseViewModels)
+                            {
+                                <tr>
+                                    <td>@(sl++)</td>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.PreviousCostPrice</td>
+                                    <td>@item.PreviousMRP</td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,124 @@
+﻿@model BusinessManagementSystemApp.Models.Models.CustomerModel
+@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li>
+                                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li>
+                                <a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+                            <span class="section">Customer Information</span>
+
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustCode">
+                                    @Html.LabelFor(c => c.CustCode) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustCode, Model.CustCode.ToString(), htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "1001" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustName">
+                                    @Html.LabelFor(c => c.CustName) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustName, Model.CustName, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "both name(s) e.g Md Mehedi" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustEmail">
+                                    @Html.LabelFor(c => c.CustEmail) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustEmail, Model.CustEmail, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "example@gmail.com" })
+                                </div>
+                            </div>
+
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustContact">
+                                    @Html.LabelFor(c => c.CustContact) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustContact, Model.CustContact.ToString(), htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "01316347466" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">
+                                    @Html.LabelFor(c => c.CustLoyaltyPoints) <span class="required"></span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustLoyaltyPoints, Model.CustLoyaltyPoints.ToString(), htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", placeholder = "500" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustAddress">
+                                    @Html.LabelFor(c => c.CustAddress) <span class="required"></span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextAreaFor(c => c.CustAddress, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12" })
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button id="Save" type="submit" class="btn btn-success">Submit</button>
+                                    <button type="button" class="btn btn-primary">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+    <script src="~/Scripts/SweetAlert.js"></script>
+    <script src="~/Scripts/sweetalert.min.js"></script>
+    <link href="~/Styles/sweetalert.css" rel="stylesheet" />
+
+    <script>
+            $(function () {
+
+                var successMessage = '@TempData["SuccessMessage"]'
+                if (successMessage != '')
+                    swal({
+                        position: 'top-end',
+                        type: 'success',
+                        title:successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+
+                 var successMessage = '@TempData["SuccessDeleteMessage"]'
+                if (successMessage != '')
+                    swal( {
+                        position: 'top-end',
+                        type: 'error',
+                        title: successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+        });
+
+    </script>
+}
+
+

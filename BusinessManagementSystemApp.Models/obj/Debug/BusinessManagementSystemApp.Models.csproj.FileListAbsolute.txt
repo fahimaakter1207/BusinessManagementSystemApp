@@ -1,0 +1,18 @@
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\bin\Debug\BusinessManagementSystemApp.Models.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\bin\Debug\BusinessManagementSystemApp.Models.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.csprojAssemblyReference.cache
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\bin\Debug\BusinessManagementSystemApp.Models.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\bin\Debug\BusinessManagementSystemApp.Models.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.csprojAssemblyReference.cache
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.csproj.CoreCompileInputs.cache
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\bin\Debug\BusinessManagementSystemApp.Models.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\bin\Debug\BusinessManagementSystemApp.Models.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.csprojAssemblyReference.cache
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.csproj.CoreCompileInputs.cache
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp.Models\obj\Debug\BusinessManagementSystemApp.Models.pdb

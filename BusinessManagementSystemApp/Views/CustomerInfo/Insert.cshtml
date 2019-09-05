@@ -1,0 +1,147 @@
+﻿@model BusinessManagementSystemApp.Models.Models.CustomerModel
+@{
+Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+<!-- page content -->
+<div class="right_col" role="main">
+    <div class="">
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_content">
+                        <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+                            <span class="section">Customer Information</span>
+
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustCode">
+                                    @Html.LabelFor(c=>c.CustCode) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustCode, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "10001" })
+                                    @Html.ValidationMessageFor(c => c.CustCode, null, new { @class = "text-danger" })
+                                    <span class="text-danger" id="isExist"></span>
+                                    <span class="text-danger" id="CodeLength"></span>
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustName">
+                                    @Html.LabelFor(c => c.CustName) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustName, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "name(s) e.g Md Mehedi" })
+                                    @Html.ValidationMessageFor(c => c.CustName, null, new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustEmail">
+                                    @Html.LabelFor(c => c.CustEmail) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustEmail,null,htmlAttributes:new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "example@gmail.com" })
+                                </div>
+                            </div>
+
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustContact">
+                                    @Html.LabelFor(c => c.CustContact) <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustContact, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "01316347466" })
+                                    @Html.ValidationMessageFor(c => c.CustContact, null, new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">
+                                    @Html.LabelFor(c => c.CustLoyaltyPoints) <span class="required"></span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextBoxFor(c => c.CustLoyaltyPoints, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", placeholder = "500" })
+                                </div>
+                            </div>
+                            <div class="item form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustAddress">
+                                    @Html.LabelFor(c => c.CustAddress) <span class="required"></span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    @Html.TextAreaFor(c => c.CustAddress, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12"})
+                                </div>
+                            </div>
+                            <div class="ln_solid"></div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <input id="Save" type="submit" class="btn btn-success" value="Submit">
+                                    <button type="button" class="btn btn-primary">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /page content -->
+@section Scripts{
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#CustCode').on('keyup', function () {
+                var CustCode = $('#CustCode').val();
+                var CodeLength = $('#CustCode').val().length;
+                if (CodeLength < 5) {
+                    $('#CodeLength').text("Please Enter Minimum Length 5!");
+                    $('#Save').attr("disabled", true);
+                } else {
+                    $('#CodeLength').text("");
+                    $('#Save').attr("disabled", false);
+                }
+                $.ajax(
+                    {
+                        url: "/CustomerInfo/IsExist",
+                        type: "POST",
+                        data: { CustCode: CustCode},
+                        success: (data) => {
+                            if(data.CustCode != ""){
+                                console.log(data.CustCode);
+                                $('#isExist').text("This Code Is Exist!");
+                                $('#Save').attr("disabled", true);
+                            }else{
+                                $('#isExist').text("This Code No Exist!");
+                                $('#Save').attr("disabled", false);
+                                //$('#isExist').removeClass("text-danger");
+                                //$('#isExist').addClass("text-success");
+                               
+                            }
+        
+                        }
+                    });
+            });
+                    var successMessage = '@TempData["SuccessMessage"]'
+            if (successMessage != '')
+                swal({
+                    position: 'top-end',
+                    type: 'success',
+                    title: successMessage,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+
+                 var successMessage = '@TempData["SuccessDeleteMessage"]'
+            if (successMessage != '')
+                swal({
+                    position: 'top-end',
+                    type: 'error',
+                    title: successMessage,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+        });
+    </script>
+
+}            
+
+    

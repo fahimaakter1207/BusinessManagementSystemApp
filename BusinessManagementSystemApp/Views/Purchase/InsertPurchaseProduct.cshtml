@@ -1,0 +1,231 @@
+﻿@model BusinessManagementSystemApp.Models.PurchaseViewModel
+@{
+    ViewBag.Title = "InsertPurchaseProduct";
+}
+
+@if (ViewBag.Message != null)
+{
+    <h3 class="text-info">@ViewBag.Message</h3>
+}
+<form method="post" id="myForm">
+    <div class="col-md-12">
+        <div class="form-group row">
+            <div class="form-horizontal" style="margin-top:3%;">
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <a href="/Purchase/Index" class="btn btn-info"><i class="glyphicon glyphicon-list"><b> Purchase Product List</b></i></a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 style="text-align:center" class="text-info"><b>Save new purchase (:-</b></h3>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group row">
+            <div class="container" style="width:55%; margin-top:2%">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" style="margin-bottom:1%">
+                        Supplier
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-4">
+                            <label>Date</label>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.Date, new { htmlAttributes = new { @class = "form-control", @placeholder = "Date" } })
+                            @Html.ValidationMessageFor(c => c.Date, null, new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-4">
+                            <label>Bill/Invoice No</label>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.InvoiceNo, new { htmlAttributes = new { @class = "form-control", @placeholder = "Invoice No" } })
+                            @Html.ValidationMessageFor(c => c.InvoiceNo, null, new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-4">
+                            <label>Supplier</label>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(c => c.SupplierId, ViewBag.Suppliers as SelectList, "--Select--", new { @class = "form-control" })
+                            @Html.ValidationMessageFor(c => c.SupplierId, null, new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group row">
+            <div class="container" style="width:90%">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" style="margin-bottom:1%">
+                        Product
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+                            <label>Product</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.DropDownListFor(c => c.ProductId, ViewBag.Products as SelectList, "--Select--", new { @class = "form-control" })
+                        </div>
+                        <div class="col-md-2">
+                            <label>Quantity</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.Quantity, null, new { @class = "form-control", @placeholder = "Quantity" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+                            <label>Code</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.ProductCode, null, new { @class = "form-control", @placeholder = "Code", @readonly = "readonly" })
+                        </div>
+                        <div class="col-md-2">
+                            <label>Unit Price</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.UnitPrice, null, new { @class = "form-control", @placeholder = "Unit Price" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+                            <label>Manufacture Date</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.EditorFor(c => c.ManufactureDate, new { htmlAttributes = new { @class = "form-control", @placeholder = "Manufacture Date" } })
+                        </div>
+                        <div class="col-md-2">
+                            <label>Total Price</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.TotalPrice, null, new { @class = "form-control", @placeholder = "Total Price", @readonly = "readonly" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+                            <label>Expire Date</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.Editor("ExpireDate", new { htmlAttributes = new { @class = "form-control", @placeholder = "Expire Date" } })
+                        </div>
+                        <div class="col-md-2">
+                            <label>Previous Cost Price</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.PreviousCostPrice, null, new { @class = "form-control", @placeholder = "Cost Price", @readonly = "readonly" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+                            <label>Remark</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextAreaFor(c => c.Remark, new { @class = "form-control", @placeholder = "Enter your remark text here." })
+                        </div>
+                        <div class="col-md-2">
+                            <label>Previous MRP</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.PreviousMRP, null, new { @class = "form-control", @placeholder = "Previous MRP", @readonly = "readonly" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-2">
+                            <label>New MRP</label>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.TextBoxFor(c => c.NewMRP, null, new { @class = "form-control", @placeholder = "New MRP" })
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin-left:1%">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-4">
+                            <input type="button" class="btn btn-block btn-info" id="AddButton" value="Add" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group row">
+            <div class="container" id="productTable">
+                <div class="row">
+                    <table class="table table-bordered table-hover table-striped">
+                        <thead style="background-color:teal; color:white; text-align:center">
+                            <tr>
+                                <td>SL</td>
+                                <td>Product(Code)</td>
+                                <td>Manufacture Date</td>
+                                <td>Expire Date</td>
+                                <td>Quantity</td>
+                                <td>Unit Price(Tk)</td>
+                                <td>Total Price(Tk)</td>
+                                <td>New MRP(Tk)</td>
+                                <td>Remark</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody id="productTableBody" style="text-align:center; font-weight:bold">
+                            @if (Model != null && Model.PurchaseDetails.Count > 0)
+                            {
+                                int sl = 1;
+                                foreach (var product in Model.PurchaseDetails)
+                                {
+                                    <tr>
+                                        <td>@(sl++)</td>
+                                        <td>@product.Product.ProductCode</td>
+                                        <td>@product.ManufactureDate</td>
+                                        <td>@product.ExpireDate</td>
+                                        <td>@product.Quantity</td>
+                                        <td>@product.UnitPrice</td>
+                                        <td>@product.TotalPrice</td>
+                                        <td>@product.NewMRP</td>
+                                        <td>@product.Remark</td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <input type="submit" id="PurchaseSubmitButton" class="btn btn-block btn-success" value="Save" disabled="disabled" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section scripts{
+    
+    <script src="~/Scripts/Project Scripts/PurchaseScript/InsertPurchaseProduct.js"></script>
+}
+
+

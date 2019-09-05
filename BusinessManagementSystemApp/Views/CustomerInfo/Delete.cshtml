@@ -1,0 +1,57 @@
+﻿
+@{
+    Layout = null;
+}
+@if (ViewBag.SuccessMsg != null)
+{
+    <h3 style="font-family:'Times New Roman', Times, serif; color:darkgreen">@ViewBag.SuccessMsg</h3>
+}
+@if (ViewBag.FailMsg != null)
+{
+    <h3 style="font-family:'Times New Roman', Times, serif; color:brown">@ViewBag.FailMsg</h3>
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>
+@section scripts{
+
+    <script src="~/Scripts/SweetAlert.js"></script>
+    <script src="~/Scripts/sweetalert.min.js"></script>
+    <link href="~/Styles/sweetalert.css" rel="stylesheet" />
+
+    <script>
+            $(function () {
+
+                var successMessage = '@TempData["SuccessMessage"]'
+                if (successMessage != '')
+                    swal({
+                        position: 'top-end',
+                        type: 'success',
+                        title:successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+
+                 var successMessage = '@TempData["SuccessDeleteMessage"]'
+                if (successMessage != '')
+                    swal( {
+                        position: 'top-end',
+                        type: 'error',
+                        title: successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+        });
+
+    </script>
+}

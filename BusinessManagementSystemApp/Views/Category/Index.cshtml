@@ -1,0 +1,59 @@
+﻿@model BusinessManagementSystemApp.Models.Models.CategoryViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="form-group">
+    <h3 align="center"><b><u>Category List</u></b></h3>
+</div>
+<div class="container" style="width:90%;margin-top:6%;">
+    <form method="post">
+        <div class="form-group row">
+            <div class="col-md-6">
+                <a style="margin-top:2%" href="/Category/SaveCategory" class="btn btn-info"><i class="glyphicon glyphicon-new-window"></i> <b>New Category</b></a>
+            </div>
+            <div class="col-md-3">
+                @Html.TextBoxFor(c => c.SearchText, new { @class="form-control",placeholder="Search Category"})
+            </div>
+            <div class="col-md-3">
+                <input type="submit" value="Search" class="btn btn-block btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
+@if (Model != null)
+{
+    <div class="container" style="width:90%;">
+        <div class="form-group row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-hover table-striped table-responsive">
+                    <thead style="background-color:teal; color:white; text-align:center; font-weight:bold">
+                        <tr>
+                            <td>SL</td>
+                            <td>Category Name</td>
+                            <td>Code</td>
+                            <td>Edit</td>
+                            <td>Details</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody style="text-align:center; font-weight:bold">
+                        @{ int sl = 1;}
+                        @foreach (var category in Model.Categories)
+                        {
+                            <tr>
+                                <td>@(sl++)</td>
+                                <td>@category.CategoryName</td>
+                                <td>@category.CategoryCode</td>
+                                <td><a href="/Category/UpdateCategory?id=@category.CategoryId" class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></a></td>
+                                <td><a href="/Category/GetCategoryDetails?id=@category.CategoryId" class="btn btn-warning"><i class="glyphicon glyphicon-th-list"></i></a></td>
+                                <td><a href="/Category/DeleteCategory?id=@category.CategoryId" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}

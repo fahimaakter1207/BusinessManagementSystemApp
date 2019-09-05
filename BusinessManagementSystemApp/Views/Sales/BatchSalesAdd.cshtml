@@ -1,0 +1,285 @@
+﻿@model BusinessManagementSystemApp.Models.SalesSaveViewModel
+@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+<!-- page content -->
+<div class="" role="main">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+                <div class="col-md-4 col-sm-12 col-xs-4">
+                    <span class="section">Sales Add</span>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustCode">
+                            @Html.LabelFor(c => c.CustomerModelsId) <span class="required">*</span>
+                        </label>
+                        <div class="col-md-8 col-sm-6 col-xs-8">
+                            @Html.DropDownListFor(c => c.CustomerModelsId, ViewBag.Customers as SelectList, "select Customer", htmlAttributes: new { @class = "form-control" })
+                            <span style="color:#0094ff; font-size:12px; float:right; right:0xp; cursor:pointer;" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-circle"></i>New Customer</span>
+                            @Html.ValidationMessageFor(c => c.CustomerModelsId, null, new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustContact">
+                            @Html.LabelFor(c => c.LoyalityPoints)
+                        </label>
+                        <div class="col-md-8 col-sm-6 col-xs-8">
+                            <input type="text" name="LoyalityPoints" id="LoyalityPoints" class="form-control" placeholder="100.00" readonly />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustName">
+                            Date <span class="required">*</span>
+                        </label>
+                        <div class="col-md-8 col-sm-6 col-xs-8">
+                            <input type="date" name="Date" id="Date" class="form-control" placeholder="04-08-2019" />
+                            @Html.ValidationMessageFor(c => c.Date, null, new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustContact">
+                            Comments
+                        </label>
+                        <div class="col-md-8 col-sm-6 col-xs-8">
+                            <textarea name="Comments" class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-8">
+                    <span class="section">Invoice Details</span>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>#</th>
+                                <th>Product</th>
+                                <th class="text-center">Av-Qty</th>
+                                <th class="text-center">Unit Price</th>
+                                <th class="text-center">Quantity</th>
+                                <th class="text-center">Total Price</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>
+                                    @Html.DropDownListFor(c => c.ProductsId, ViewBag.Products as SelectList, "select Product", htmlAttributes: new { @class = "form-control" })
+                                </td>
+                                <td><input type="text" id="AvQty" class="form-control text-right" placeholder="100.00" readonly /></td>
+                                <td><input type="text" id="UnitPrice" class="form-control text-right" placeholder="100.00" /></td>
+                                <td><input type="text" id="Quantity" class="form-control text-right" placeholder="100.00" /></td>
+                                <td><input type="text" class="form-control text-right total" placeholder="100.00" readonly /></td>
+                                <td class="text-center"><span class="btn btn-success btn-md add-item"><i class="fa fa-plus-square"></i></span></td>
+                            </tr>
+                            <tbody class="item-table"></tbody>
+                            <tfoot id="others">
+                                <tr>
+                                    <th class="text-right" colspan="5" style="vertical-align:middle;">Grand Total(Tk.)</th>
+                                    <td width="120" class="text-right">
+                                        <input class="form-control text-right sub-total" type="text" name="GrandTotal" id="GrandTotal" value="" placeholder="100.00" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right" colspan="5" style="vertical-align:middle;">Discount(%)</th>
+                                    <td width="120" class="text-right">
+                                        <input class="form-control text-right" type="text" name="Discount" id="Discount" placeholder="10%" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right" colspan="5" style="vertical-align:middle;">Discount Amount(-)</th>
+                                    <td width="120" class="text-right">
+                                        <input class="form-control text-right" type="text" name="DiscountAmt" id="DiscountAmt" placeholder="100.00" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right" colspan="5" style="vertical-align:middle;">Payable Amount(Tk.)</th>
+                                    <td width="120" class="text-right">
+                                        <input class="form-control text-right" type="text" id="SellTotal" name="CustomerPayment" value="" placeholder="100.00" />
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="5"></th>
+                                    <td width="120" class="text-right">
+                                        <button id="Save" class="btn btn-primary" type="submit">Save</button>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </div>
+               </form>
+</div>
+    </div>
+</div>
+<!-- /page content -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Customer Add Form</h4>
+                </div>
+                <div class="modal-body">
+                    code here...............
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script>
+   
+    $(document).ready(function () {
+        $("#Save").click(function () {
+            if (confirm("Are you sure you want to save this?")) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        });
+
+        $('#Save').attr("disabled",true);
+        var index = 0;
+        $('.add-item').on('click', function () {
+            var CustomerModelsId = $('#CustomerModelsId').val();
+            var ProductId = $('#ProductsId').val();
+            var Date = $('#Date').val();
+            var Quantity = $('#Quantity').val();
+            var UnitPrice = $('#UnitPrice').val();
+            var CustName = $('#CustomerModelsId option:selected').html();
+            var ProName = $('#ProductsId option:selected').html();
+
+            var total = +UnitPrice * +Quantity;
+            //var disAmtP = Math.round(+total / 100 * +disPerP);
+            //var totalPrice = Math.round(+total - +disAmtP);
+
+            if ((+ProductId && +Quantity) != '') {
+                var html = '<tr>';
+                html += '<td class="serial"></td><td>' + ProName + '</td><td></td><td class="text-right">' + UnitPrice + '</td><td class="text-center">' + Quantity + '</td><td class="text-right">' + total + '</td><td align="center">';
+                html += '<input type="hidden" name="SalesDetailsList[' + index + '].ProductsId" value="' + ProductId + '" />';
+                html += '<input type="hidden" name="SalesDetailsList[' + index + '].UnitPrice" value="' + UnitPrice + '" />';
+                html += '<input type="hidden" name="SalesDetailsList[' + index + '].Quantity" value="' + Quantity + '" />';
+                html += '<input type="hidden" name="SalesDetailsList[' + index + '].SubTotal" value="' + total + '" />';
+                html += '<input type="hidden" name="TotalPrice[]" value="' + total + '" />';
+                html += '<a class="item-edit" href="#"><i class="ace-icon fa fa-pencil bigger-130"></i></a>&nbsp;||&nbsp;<a class="item-delete text-danger" href="#"><i class="ace-icon fa fa-trash-o bigger-130"></i></a></td></tr>';
+
+                $('.item-table').append(html);
+                //$('#ProductsId').val('');
+                $('#Quantity').val('');
+                $('#UnitPrice').val('');
+                $('#TotalPrice').html('');
+                serialMaintain();
+                index++;
+            }
+        });
+        $('.item-table').on('click', '.item-delete', function (e) {
+            var element = $(this).parents('tr');
+            element.remove();
+            e.preventDefault();
+            serialMaintain();
+        });
+    
+            $('.item-table').on('click', '.item-edit', function (e) {
+                var element = $(this).parents('tr');
+                var ProductId = element.find('input[name="SalesList[' + Index + '].ProductsId"]').val();
+                var Quantity = element.find('input[name="SalesList[' + Index + '].Quantity"]').val();
+                var UnitPrice = element.find('input[name="SalesList[' + Index + '].UnitPrice"]').val();
+
+                console.log(ProductId);
+                console.log(Quantity);
+                console.log(UnitPrice);
+
+                $('#ProductsId').val(ProductId);
+                $('#Quantity').val(Quantity);
+                $('#UnitPrice').val(UnitPrice);
+
+                element.remove();
+                e.preventDefault();
+                serialMaintain();
+            });
+
+
+
+        function serialMaintain() {
+            var i = 1;
+            var subtotal = 0;
+            $('.serial').each(function (key, element) {
+                var test = $(element).html(i);
+                var total = $(element).parents('tr').find('input[name="TotalPrice[]"]').val();
+                subtotal += +total;
+                  $('#Save').attr("disabled", false);
+                i++;
+            });
+
+            $('#GrandTotal').val(subtotal);
+            $('#SellTotal').val(subtotal);
+            //$('#disPer').trigger('change');
+            //$('#payAmount').trigger('change');
+        }
+        $('#others').on('click', '#Discount', function () {
+            var GrandTotal = $('#GrandTotal').val();
+            var Discount = $('#Discount').val();
+            var DiscountAmt = Math.round((+GrandTotal / 100) * +Discount);
+            var GrandTotal = Math.round(+GrandTotal - +DiscountAmt);
+
+            $('#DiscountAmt').val(DiscountAmt);
+            $('#SellTotal').val(GrandTotal);
+        });
+        $('#Quantity').on('keyup', function () {
+            var Quantity  = $('#Quantity').val();
+            var UnitPrice = $('#UnitPrice').val();
+            var AvQty = $('#AvQty').val();
+            if (+AvQty < +Quantity) {
+                alert("You have insufficient quantity!");
+                $('#Quantity').val("");
+            }
+            var Total = Math.round(+Quantity * +UnitPrice);
+            $('.total').val(Total);
+        });
+        $('#CustomerModelsId').on('change', function () {
+
+            var CustId = $('#CustomerModelsId option:selected').val();
+            $.ajax({
+                url: "/Sales/GetCustLoyaltyPoints",
+                type: "GET",
+                data: { CustId: CustId },
+                success: (data) => {
+
+                    $('#LoyalityPoints').val(data.CustLoyaltyPoints);
+                    $('#Discount').val(data.CustLoyaltyPoints / 10);
+
+                }
+            });
+
+        });
+        $('#ProductsId').on('change', function () {
+            var ProId = $('#ProductsId option:selected').val();
+            $.ajax({
+                url: "/Sales/ProductDetails",
+                type: "GET",
+                data: { ProId: ProId },
+                success: (data) => {
+                    $('#AvQty').val(data.AvailableQuantity);
+                    $('#UnitPrice').val(data.UnitPrice);
+                }
+            });
+
+        });
+    });
+</script>
+
+} 

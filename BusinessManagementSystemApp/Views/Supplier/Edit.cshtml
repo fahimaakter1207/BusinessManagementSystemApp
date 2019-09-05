@@ -1,0 +1,98 @@
+﻿@model BusinessManagementSystemApp.Models.SupplierVM
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    @if (ViewBag.SuccessMsg != null)
+    {
+        <h3 style="font-family:Arial, Helvetica, sans-serif;text-align:center;color:forestgreen">@ViewBag.SuccessMsg</h3>
+    }
+    @if (ViewBag.FailMsg != null)
+    {
+        <h3 style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:red">@ViewBag.FailMsg </h3>
+    }
+
+    <div class="container">
+        <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+            <h3 class="section" style="text-align:center">Edit Supplier</h3>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Code">
+                    Code <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="code" class="form-control col-md-7" required="required" value="@Model.Code" name="Code" placeholder="1001" type="text">
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Code)</span>
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Name">
+                    Name <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="name" class="form-control col-md-7 col-xs-12" required="required" value="@Model.Name" name="Name" placeholder="Name" type="text">
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Name)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="file" name="image" accept=".jpg,.jpeg,.png" />
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Address">
+                    Address <span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="address" name="Address" required="required" value="@Model.Address" class="form-control col-md-7 col-xs-12" placeholder="Address" />
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Address)</span>
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Email">
+                    Email <span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="email" id="email" required="required" name="Email" value="@Model.Email" class="form-control col-md-7 col-xs-12" placeholder="E-mail ">
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Email)</span>
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Contact">
+                    Contact<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="number" id="contact" required="required" name="Contact" value="@Model.Contact" class="form-control col-md-7 col-xs-12" placeholder="Contact No">
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Contact)</span>
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="ContactPerson">
+                    Contact Person<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="number" id="contactPerson" required="required" name="ContactPerson" value="@Model.ContactPerson" class="form-control col-md-7 col-xs-12" placeholder="Contact Person">
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.ContactPerson)</span>
+                </div>
+            </div>
+            <div class="item form-group">
+                <div class="col-md-10" style="text-align:center">
+                    <button id="Save" type="submit" class="btn btn-success">Edit</button>
+                    <a href="@Url.Action("Show","Supplier")" class="btn btn-primary">cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="~/Scripts/validator.js"></script>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

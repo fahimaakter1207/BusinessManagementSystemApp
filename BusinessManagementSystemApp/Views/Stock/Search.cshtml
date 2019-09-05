@@ -1,0 +1,146 @@
+﻿@model BusinessManagementSystemApp.Models.StockVM
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Stock Search</h2>
+<br />
+@if (ViewBag.SuccessMsg != null)
+{
+    <h3 style="font-family:Arial, Helvetica, sans-serif;text-align:center;color:forestgreen">@ViewBag.SuccessMsg</h3>
+}
+@if (ViewBag.FailMsg != null)
+{
+    <h3 style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:red">@ViewBag.FailMsg </h3>
+}
+<div>
+    <div>
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1">
+                    <label class="control-label">Product</label>
+                </div>
+                <div class="col-md-3 form-group">
+                    <input type="text" name="ProductName" class="form-control" value="" />
+                </div>
+
+                <div class="col-md-1 col-md-offset-1">
+                    <label class="control-label">Start Date</label>
+                </div>
+                <div class="col-md-3 form-group">
+                    <input type="date" name="StartDate" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1">
+                    <label class="control-label">Category</label>
+                </div>
+                <div class="col-md-3 form-group">
+                    <input type="text" name="CategoryName" class="form-control" value="" />
+                </div>
+
+                <div class="col-md-1 col-md-offset-1">
+                    <label class="control-label">End Date</label>
+                </div>
+                <div class="col-md-3 form-group">
+                    <input type="date" name="EndDate" class="form-control" value="" />
+                </div>
+            </div>
+
+            @*Check box*@
+            <div class="row">
+                <div class="form-group col-md-4 col-md-offset-12">
+                    <div class="form-check col-md-4">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Re-Order Level</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="expired">
+                        <label class="form-check-label" for="expired">Expired</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-11" style="text-align:center; padding-top:10px">
+                    <input type="submit" class="btn btn-success" name="search" value="Search" />
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="">
+        <table class="table table-striped table-bordered " style=" margin-top:20px">
+            <thead class="table-bordered" style="background-color: forestgreen ;color:white">
+                <tr>
+                    <th>SL</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Reorderbr Level</th>
+                    <th>Expired Date</th>
+                </tr>
+            </thead>
+            @if (ViewBag.Products != null)
+            {
+                <tbody>
+
+                    @{ int sl = 1;}
+                    @foreach (var product in ViewBag.Products)
+                    {
+                    <tr>
+                        <td>@(sl++)</td>
+                        <td>@product.Code</td>
+                        <td class="text-center"><a class="Product text-primary" data-id="@product.ProductName" href="@Url.Action("SearchByReorderLevel","Stock")">@product.ProductName</a></td>
+                        <td>@product.CategoryName</td>
+                        <td>@product.ReorderLevel</td>
+                        <td>@product.ExpireDate</td>
+                    </tr>
+                    }
+                </tbody>
+            }
+
+        </table>
+    </div>
+</div>
+<br />
+@section scripts{
+
+    <script src="~/Scripts/SweetAlert.js"></script>
+    <script src="~/Scripts/sweetalert.min.js"></script>
+    <link href="~/Styles/sweetalert.css" rel="stylesheet" />
+
+    <script>
+            $(function () {
+
+                var successMessage = '@TempData["SuccessMessage"]'
+                if (successMessage != '')
+                    swal({
+                        position: 'top-end',
+                        type: 'success',
+                        title:successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+            $(".Product").on('click', function () {
+                var voucherNo = $(this).attr("data-id");
+                $.ajax(
+                    {
+                        url: "/Stock/SearchByReorderLevel",
+                        type: "POST",
+                        data: { voucherNo: voucherNo },
+                        success: function (data) {
+                            //console.log(data);
+                            $('#Product').modal('show');
+                            $("#Product").html(data);
+
+                        }
+                    });
+            });
+        });
+
+    </script>
+}

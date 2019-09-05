@@ -1,0 +1,143 @@
+﻿@model BusinessManagementSystemApp.Models.Models.CustomerModel
+@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+<div class="row">
+    <div class="page-title">
+        <div class="title_left">
+            <h3><small>Search by customer name</small></h3>
+        </div>
+
+        <div class="title_right">
+            <form method="post">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                    <div class="input-group">
+                        <input type="text" name="CustName" value="@Model.CustName" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Customer Information List</h2>
+                <div class="navbar-right">
+                    @*<a href="Insert" class="btn btn-primary btn-sm"><i class="fa fa-plus-square"></i>Add</a>*@
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-plus-square"></i>Add
+                    </button>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>@Html.LabelFor(c => c.CustCode)</th>
+                            <th>@Html.LabelFor(c => c.CustName)</th>
+                            <th>@Html.LabelFor(c => c.CustEmail)</th>
+                            <th>@Html.LabelFor(c => c.CustContact)</th>
+                            <th>@Html.LabelFor(c => c.CustAddress)</th>
+                            <th>@Html.LabelFor(c => c.CustLoyaltyPoints)</th>
+                            <th style="text-align:center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ int sl = 1;}
+                        @foreach (var customer in Model.Customers)
+                        {
+                            <tr>
+                                <th scope="row">@(sl++)</th>
+                                <td>@customer.CustCode</td>
+                                <td>@customer.CustName</td>
+                                <td>@customer.CustEmail</td>
+                                <td>@customer.CustContact</td>
+                                <td>@customer.CustAddress</td>
+                                <td>@customer.CustLoyaltyPoints</td>
+                                <td style="text-align:center;"><a href="Update?Id=@customer.Id"><i class='fa fa-edit'></i></a>&nbsp;||&nbsp<a href="Delete?Id=@customer.Id"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <form class="form-horizontal form-label-left" novalidate action="@Url.Action("Insert","CustomerInfo")" method="post" enctype="multipart/form-data">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Customer Add Form</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustCode">
+                                @Html.LabelFor(c => c.CustCode) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustCode, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "1001" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustName">
+                                @Html.LabelFor(c => c.CustName) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustName, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "both name(s) e.g Md Mehedi" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustEmail">
+                                @Html.LabelFor(c => c.CustEmail) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustEmail, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "example@gmail.com" })
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustContact">
+                                @Html.LabelFor(c => c.CustContact) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustContact, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", required = "required", placeholder = "01316347466" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">
+                                @Html.LabelFor(c => c.CustLoyaltyPoints) <span class="required"></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustLoyaltyPoints, null, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12", placeholder = "500" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="CustAddress">
+                                @Html.LabelFor(c => c.CustAddress) <span class="required"></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextAreaFor(c => c.CustAddress, htmlAttributes: new { @class = "form-control col-md-7 col-xs-12" })
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>

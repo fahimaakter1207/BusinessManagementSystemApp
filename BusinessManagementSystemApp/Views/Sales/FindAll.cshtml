@@ -1,0 +1,346 @@
+﻿@model BusinessManagementSystemApp.Models.SalesSaveViewModel
+@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+<div class="row">
+    <div class="page-title">
+        <div class="title_left">
+            <h3><small>Search by customer name</small></h3>
+        </div>
+
+        <div class="title_right">
+            <form method="post">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                    <div class="input-group">
+                        <input type="text" name="CustName" value="" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Sales List</h2>
+                <div class="navbar-right">
+                    @*<a href="Insert" class="btn btn-primary btn-sm"><i class="fa fa-plus-square"></i>Add</a>*@
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        <i class="fa fa-plus-square"></i>Add
+                    </button>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>@Html.LabelFor(c => c.CustomerModelsId)</th>
+                            <th>@Html.LabelFor(c => c.Date)</th>
+                            <th class="text-center">SaleId</th>
+                            <th>@Html.LabelFor(c => c.CustomerPayment)</th>
+                            <th>@Html.LabelFor(c => c.Comments)</th>
+                            <th style="text-align:center;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ int sl = 1;}
+                        @foreach (var v in Model.SalesList)
+                        {
+                            <tr>
+                                <th scope="row">@(sl++)</th>
+                                <td>@v.CustomerModels.CustName</td>
+                                <td>@v.Date</td>
+                                <td class="text-center"><a class="voucherNo text-primary" data-id="@v.Id" href="#">@v.Id</a></td>
+                                <td>@v.CustomerPayment</td>
+                                <td>@v.Comments</td>
+                                <td style="text-align:center;"><a href="Update?Id=@v.Id"><i class='fa fa-edit'></i></a>&nbsp;||&nbsp<a href="Delete?Id=@v.Id"><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+<div class="modal fade" id="InvoiceDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Invoice Details</h4>
+            </div>
+            <form class="form-horizontal" novalidate action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    Details Here!!!!!!!!!!!!!!!!!
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Sales Add</h4>
+            </div>
+            <form class="form-horizontal" novalidate action="" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustCode">
+                                @Html.LabelFor(c => c.CustomerModelsId) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-8 col-sm-6 col-xs-8">
+                                @Html.DropDownListFor(c => c.CustomerModelsId, Model.CustomerList, "select Customer", htmlAttributes: new { @class = "form-control", required = "required" })
+                                <span style="color:#0094ff; font-size:12px; float:right; right:0xp; cursor:pointer;" data-toggle="modal" data-target="#newCustomer"><i class="fa fa-plus-circle"></i>New Customer</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustEmail">
+                                @Html.LabelFor(c => c.ProductsId) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-8 col-sm-6 col-xs-8">
+                                @Html.TextBoxFor(c => c.ProductsId, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "example@gmail.com" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustName">
+                                @Html.LabelFor(c => c.Date) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-8 col-sm-6 col-xs-8">
+                                @Html.TextBoxFor(c => c.Date, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "04-08-2019" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustContact">
+                                @Html.LabelFor(c => c.Quantity) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-8 col-sm-6 col-xs-8">
+                                @Html.TextBoxFor(c => c.Quantity, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "01316347466" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-4" for="number">
+                                @Html.LabelFor(c => c.UnitPrice) <span class="required"></span>
+                            </label>
+                            <div class="col-md-8 col-sm-6 col-xs-8">
+                                @Html.TextBoxFor(c => c.UnitPrice, null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-4" for="CustContact">
+                                @Html.LabelFor(c => c.AvQuantity) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-8 col-sm-6 col-xs-8">
+                                @Html.TextBoxFor(c => c.AvQuantity, null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <button style="float:right; right:0px;" id="Add" type="submit" class="btn btn-success">Add</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Product</th>
+                                        <th class="text-center">Quantity</th>
+                                        <th class="text-right">Unit Price</th>
+                                        <th class="text-right">Total Price</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Pencile</td>
+                                        <td class="text-center">10</td>
+                                        <td class="text-right">10.00</td>
+                                        <td class="text-right">100.00</td>
+                                        <td class="text-center">Delete</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th class="text-right" colspan="4" style="vertical-align:middle;">Grand Total(Tk.)</th>
+                                        <td width="120" class="text-right"><input class="form-control text-right" type="text" name="GrandTotal" value="100.00" /></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-right" colspan="4" style="vertical-align:middle;">Discount(%)</th>
+                                        <td width="120" class="text-right"><input class="form-control text-right" type="text" name="GrandTotal" value="100.00" /></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-right" colspan="4" style="vertical-align:middle;">Discount Amount</th>
+                                        <td width="120" class="text-right"><input class="form-control text-right" type="text" name="GrandTotal" value="100.00" /></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-right" colspan="4" style="vertical-align:middle;">Payable Amount(Tk.)</th>
+                                        <td width="120" class="text-right"><input class="form-control text-right" type="text" name="GrandTotal" value="100.00" /></td>
+                                        <td></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="newcustomer">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="newCustomer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <form class="form-horizontal" novalidate action="" method="post" enctype="multipart/form-data">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Customer Add</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+                        <div class="item form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-12" for="CustCode">
+                                @Html.LabelFor(c => c.CustomerModels.CustCode) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustomerModels.CustCode, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "1001" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-12" for="CustName">
+                                @Html.LabelFor(c => c.CustomerModels.CustName) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustomerModels.CustName, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "both name(s) e.g Md Mehedi" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-12" for="CustEmail">
+                                @Html.LabelFor(c => c.CustomerModels.CustEmail) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustomerModels.CustEmail, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "example@gmail.com" })
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-12" for="CustContact">
+                                @Html.LabelFor(c => c.CustomerModels.CustContact) <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustomerModels.CustContact, null, htmlAttributes: new { @class = "form-control", required = "required", placeholder = "01316347466" })
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-12" for="number">
+                                @Html.LabelFor(c => c.CustomerModels.CustLoyaltyPoints) <span class="required"></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(c => c.CustomerModels.CustLoyaltyPoints, null, htmlAttributes: new { @class = "form-control", placeholder = "500" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-6 col-xs-12" for="CustAddress">
+                                @Html.LabelFor(c => c.CustomerModels.CustAddress) <span class="required"></span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextAreaFor(c => c.CustomerModels.CustAddress, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal fade" id="salesDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Invoice</h4>
+            </div>
+            <div class="modal-body" id="salles-view">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Print</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/Scripts/SweetAlert.js"></script>
+    <script src="~/Scripts/sweetalert.min.js"></script>
+    <link href="~/Styles/sweetalert.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+
+            $(".voucherNo").on('click', function () {
+                var voucherNo = $(this).attr("data-id");
+                $.ajax(
+                    {
+                        url: "/Sales/VoucherDetails",
+                        type: "POST",
+                        data: { voucherNo: voucherNo },
+                        success: function (data) {
+                            //console.log(data);
+                            $('#salesDetails').modal('show');
+                            $("#salles-view").html(data);
+
+                        }
+                    });
+            });
+             var successMessage = '@TempData["SuccessMessage"]'
+                if (successMessage != '')
+                    swal({
+                        position: 'top-end',
+                        type: 'success',
+                        title:successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+
+                 var successMessage = '@TempData["SuccessDeleteMessage"]'
+                if (successMessage != '')
+                    swal( {
+                        position: 'top-end',
+                        type: 'error',
+                        title: successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+
+        });
+    </script>
+} 

@@ -1,0 +1,126 @@
+﻿@model BusinessManagementSystemApp.Models.SupplierVM
+@{
+    ViewBag.Title = "Show";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style=" text-align:center">Suppliers</h2>
+<a href="@Url.Action("Add","Supplier")" class="btn btn-success" style="margin:10px"><i class="fa fa-plus-circle"></i>Add New</a>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Show</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            margin: auto;
+            width: 50%;
+        }
+
+        td, th {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+            <h3 class="section" style="text-align:center">Search Supplier</h3>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Name">
+                    Name <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input id="name" class="form-control col-md-7 col-xs-12" value="@Model.Name" name="Name" placeholder="Name" type="text">
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <div class="col-md-10" style="text-align:center">
+                    <button id="Save" type="submit" class="btn btn-primary"><i class="fa fa-search"></i>Search</button>
+                </div>
+            </div>
+        </form>
+
+        <table class="table tab-content" style=" margin-top:20px">
+            <thead class="table-bordered" style="background-color: #000000 ;color:white">
+                <tr>
+                    <td>Sl</td>
+                    <td>Code</td>
+                    <td>Name</td>
+                    <td>Address</td>
+                    <td>Image</td>
+                    <td>Email</td>
+                    <td>Contact</td>
+                    <td>ContactPerson</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                @{ int sl = 1;}
+                @foreach (var supplier in Model.Suppliers)
+                {
+                    <tr>
+                        <td>@(sl++)</td>
+                        <td>@supplier.Code</td>
+                        <td>@supplier.Name</td>
+                        <td>@supplier.Address</td>
+                        <td>@supplier.Image</td>
+                        <td>@supplier.Email</td>
+                        <td>@supplier.Contact</td>
+                        <td>@supplier.ContactPerson</td>
+                        <td>
+                            <a href="@Url.Action("Edit","Supplier", new {id = supplier.Id  })" class="btn btn-outline-success"><i class="fa fa-edit"></i>Edit</a> |
+                            <a href="@Url.Action("Delete","Supplier", new {id = supplier.Id  })" class="btn btn-outline-primary"><i class="fa fa-trash"></i>Delete</a>
+                        </td>
+
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
+@section scripts{
+
+
+
+    <script>
+            $(function () {
+
+                var successMessage = '@TempData["SuccessMessage"]'
+                if (successMessage != '')
+                    swal({
+                        position: 'top-end',
+                        type: 'success',
+                        title:successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+
+                 var successMessage = '@TempData["SuccessDeleteMessage"]'
+                if (successMessage != '')
+                    swal( {
+                        position: 'top-end',
+                        type: 'error',
+                        title: successMessage,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+        });
+
+    </script>
+}

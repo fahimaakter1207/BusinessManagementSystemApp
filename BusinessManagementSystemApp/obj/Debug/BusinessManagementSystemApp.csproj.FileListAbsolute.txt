@@ -1,0 +1,257 @@
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.dll.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.exe
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.exe.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.rsp
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.exe
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.exe.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.rsp
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.AppContext.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Console.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Compression.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Pipes.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Claims.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.ValueTuple.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XPath.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.exe
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.exe.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.rsp
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\VBCSCompiler.exe
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.BLL.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Models.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.SqlServer.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Helpers.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Mvc.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Razor.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Deployment.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Razor.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.BLL.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Models.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.SqlServer.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Razor.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Deployment.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Razor.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Helpers.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Mvc.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csprojAssemblyReference.cache
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csproj.CoreCompileInputs.cache
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csproj.CopyComplete
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.dll.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.dll.config
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.dll
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.pdb
+C:\Users\rajib\source\repos\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csprojAssemblyReference.cache
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csproj.CoreCompileInputs.cache
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.dll.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.exe
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.exe.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.rsp
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.exe
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.exe.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.rsp
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.AppContext.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Console.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Compression.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.FileSystem.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Pipes.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.AccessControl.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Claims.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.ValueTuple.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XPath.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.exe
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.exe.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.rsp
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.BLL.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Models.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Helpers.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Mvc.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Razor.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Deployment.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Razor.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.dll
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.BLL.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Models.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Razor.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Deployment.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Razor.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Helpers.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Mvc.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.dll.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.pdb
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.dll.config
+D:\ASP.NET Work\BITM Course Files\GIT Files\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csproj.CopyComplete
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.dll.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.exe
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.exe.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csc.rsp
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.exe
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.exe.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\csi.rsp
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.AppContext.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Collections.Immutable.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Console.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Compression.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.FileSystem.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.IO.Pipes.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Reflection.Metadata.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.AccessControl.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Claims.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.ValueTuple.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XPath.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.exe
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.exe.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\vbc.rsp
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\VBCSCompiler.exe
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\roslyn\VBCSCompiler.exe.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.BLL.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Models.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.SqlServer.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Helpers.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Mvc.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Razor.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Deployment.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Razor.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.BLL.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Models.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\AutoMapper.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\EntityFramework.SqlServer.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Razor.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Deployment.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Webpages.Razor.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Helpers.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\System.Web.Mvc.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.Repository.dll.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.pdb
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\bin\BusinessManagementSystemApp.DatabaseContext.dll.config
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csprojAssemblyReference.cache
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csproj.CoreCompileInputs.cache
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.csproj.CopyComplete
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.dll
+C:\Phase2\Git\2431662\User\BusinessManagementSystemApp\BusinessManagementSystemApp\BusinessManagementSystemApp\obj\Debug\BusinessManagementSystemApp.pdb

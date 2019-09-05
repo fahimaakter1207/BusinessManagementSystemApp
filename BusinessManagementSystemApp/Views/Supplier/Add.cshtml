@@ -1,0 +1,136 @@
+﻿@model BusinessManagementSystemApp.Models.SupplierVM
+@{
+    Layout = "~/Views/Shared/Dashboard.cshtml";
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+  
+</head>
+
+<body>
+    @if (ViewBag.SuccessMsg != null)
+    {
+        <h3 style="font-family:Arial, Helvetica, sans-serif;text-align:center;color:forestgreen">@ViewBag.SuccessMsg</h3>
+    }
+
+    @if (ViewBag.FailMsg != null)
+    {
+        <h3 style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:red">@ViewBag.FailMsg </h3>
+    }
+
+    <div class="container">
+        <form class="form-horizontal form-label-left" novalidate action="" method="post" enctype="multipart/form-data">
+            <div class="form-group row">
+                <a style="margin-top:2%" href="~/Supplier/Show" class="btn btn-info"><i class="glyphicon glyphicon-th-list"></i> Show Supplier List</a><hr />
+                <h3 class="text-info">Supplier Information Form</h3>
+                @if (ViewBag.Message != null)
+                {
+                    <h3 width="60%" align="center" class="label-danger">@ViewBag.Message</h3>
+
+                }
+            </div>
+            <div class="form-row">
+                <div class="item form-group">
+                    <label class="control-label col-md-2" for="Code">
+                        Code <span class="required">*</span>
+                    </label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+
+                        @Html.TextBoxFor(c => c.Code, null, new { @class = "form-control", placeholder = "1001" })
+                        <span style="color:red">@Html.ValidationMessageFor(model => model.Code)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Name">
+                    Name <span class="required">*</span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                    @Html.TextBoxFor(c => c.Name, null, new { @class = "form-control", placeholder = "Name" })
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Name)</span>
+
+                </div>
+
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Address">
+                    Address <span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    @Html.TextBoxFor(c => c.Address, null, new { @class = "form-control", placeholder = "Address" })
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Address)</span>
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input type="file" name="image" accept=".jpg,.jpeg,.png" />
+                </div>
+            </div>
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Email">
+                    Email <span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    @Html.TextBoxFor(c => c.Email, null, new { @class = "form-control", placeholder = "Address" })
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Email)</span>
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="Contact">
+                    Contact<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    @Html.TextBoxFor(c => c.Contact, null, new { @class = "form-control", placeholder = "Contact" })
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.Contact)</span>
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <label class="control-label col-md-2" for="ContactPerson">
+                    Contact Person<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    @Html.TextBoxFor(c => c.ContactPerson, null, new { @class = "form-control", placeholder = "ContactPerson" })
+                    <span style="color:red">@Html.ValidationMessageFor(model => model.ContactPerson)</span>
+                </div>
+            </div>
+
+            <div class="item form-group">
+                <div class="col-md-10" style="text-align:center">
+                    <button id="Save" type="submit" class="btn btn-success">Save</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    @section scripts{
+        <script>
+            $("#Name").on('click', function () {
+                var supplierCode = $("#Code").val();
+
+                $.ajax({
+                    url: "/Supplier/IsExistSupplierName",
+                    type: "POST",
+                    data: { supplierCode: supplierCode },
+                    success: function (response) {
+                        if (response == true) {
+                            swal("Supplier already exist!");
+                            $('#Save').attr("disabled", true);
+                            return;
+                        } else {
+                            $('#Save').attr("disabled", false);
+                        }
+                    }
+                })
+            })
+
+        </script>
+
+    }
+</body>
+</html>
